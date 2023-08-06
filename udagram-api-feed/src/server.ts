@@ -5,7 +5,6 @@ import { sequelize } from "./sequelize";
 import { IndexRouter } from "./controllers/v0/index.router";
 
 import bodyParser from "body-parser";
-import { config } from "./config/config";
 import { V0_FEED_MODELS } from "./controllers/v0/model.index";
 
 (async () => {
@@ -47,7 +46,6 @@ import { V0_FEED_MODELS } from "./controllers/v0/model.index";
 
   // Start the Server
   app.listen(port, () => {
-    console.log(`server running ${config.url}`);
     console.log(`press CTRL+C to stop server`);
   });
 })();

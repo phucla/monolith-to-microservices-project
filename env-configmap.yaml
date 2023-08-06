@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  AWS_BUCKET: my-bucket-demo-project2
+  AWS_PROFILE: default
+  AWS_REGION: us-east-1
+  JWT_SECRET: testing
+  POSTGRES_DB: udacity
+  POSTGRES_HOST: database-1.cbyjfv97wriv.us-east-1.rds.amazonaws.com
+  URL: http://afac99f85d349444e97a11b12f809c2a-835362379.us-east-1.elb.amazonaws.com:8080
+metadata:
+  name: env-config
